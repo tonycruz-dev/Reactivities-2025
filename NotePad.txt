@@ -7,3 +7,6 @@ dotnet ef database drop -p Persistence -s API
 Add-Migration InitialCreate -Project Persistence -StartupProject API -OutputDir Migrations
 
 Update-Database -Project Persistence -StartupProject API
+-------------------------------------------------------------------------------
+git remote add origin https://github.com/tonycruz-dev/Reactivities-2025.git
+--------------------------------------------------------------------------------
