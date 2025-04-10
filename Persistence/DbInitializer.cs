@@ -125,15 +125,7 @@ public class DbInitializer
 
         context.Activities.AddRange(activities);
 
-        //await context.SaveChangesAsync();
-        try
-        {
-            context.SaveChanges();
-        }
-        catch (DbUpdateException ex)
-        {
-            var innerException = ex.InnerException;
-            Console.WriteLine(innerException.Message);
-        }
+        await context.SaveChangesAsync();
+        
     }
 }
