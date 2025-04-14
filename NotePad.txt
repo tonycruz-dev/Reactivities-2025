@@ -10,3 +10,5 @@ Update-Database -Project Persistence -StartupProject API
 -------------------------------------------------------------------------------
 git remote add origin https://github.com/tonycruz-dev/Reactivities-2025.git
 --------------------------------------------------------------------------------
+
+npm run dev
