@@ -14,3 +14,4 @@ git remote add origin https://github.com/tonycruz-dev/Reactivities-2025.git
 npm run dev
 
 Add-Migration IdentityAdded -Project Persistence -StartupProject API
+Add-Migration ActivityAttendeesAdded -Project Persistence -StartupProject API
