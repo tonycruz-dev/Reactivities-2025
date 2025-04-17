@@ -6,9 +6,9 @@ import { useActivities } from "../../../lib/hooks/useActivities";
 
 
 export default function ActivityList() {
-    const { activities, isPending } = useActivities();
+    const { activities, isLoading } = useActivities();
 
-    if (!activities || isPending) return <Typography>Loading...</Typography>;
+    if (!activities || isLoading) return <Typography>Loading...</Typography>;
   return (
     <Box sx={{ display: "flex", flexDirection: "column", gap: 3 }}>
       {activities.map((activity) => (
