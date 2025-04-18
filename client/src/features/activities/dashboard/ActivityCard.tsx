@@ -31,7 +31,7 @@ export default function ActivityCard({
     <Card elevation={3} sx={{ borderRadius: 3 }}>
       <Box display="flex" alignItems="center" justifyContent="space-between">
         <CardHeader
-          avatar={<Avatar sx={{ height: 80, width: 80 }} />}
+          avatar={<Avatar src={activity.hostImageUrl} sx={{ height: 80, width: 80 }} alt="Image of host" />}
           title={activity.title}
           titleTypographyProps={{
             fontWeight: "bold",
@@ -77,14 +77,7 @@ export default function ActivityCard({
           {activity.attendees.map((att) => (
             <AvatarPopover profile={att} key={att.id} />
           ))}
-          {/* {activity.attendees.map((att) => (
-            <Avatar 
-            key={att.id} 
-            alt={att.displayName + ' image'} 
-            src={att.imageUrl} 
-            component={Link}
-            to={`/profile/${att.id}`} />
-          ))} */}
+    
         </Box>
       </CardContent>
       <CardContent sx={{ pb: 2 }}>

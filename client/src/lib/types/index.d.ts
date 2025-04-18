@@ -14,6 +14,7 @@ type Activity = {
   isHost: boolean;
   hostId: string;
   hostDisplayName: string;
+  hostImageUrl: string;
 };
 
 type Profile = {
@@ -60,4 +61,8 @@ type LocationIQAddress = {
   country: string;
   country_code: string;
   neighbourhood?: string;
+};
+type Photo = {
+  id: string;
+  url: string;
 };

@@ -10,11 +10,7 @@ type Props = {
 };
 
 export default function ActivityDetailsHeader({ activity }: Props) {
-  // const isCancelled = false;
-  // const isHost = true;
-  // const isGoing = true;
   const { updateAttendance } = useActivities(activity.id);
-  //const loading = false;
 
   return (
     <Card
@@ -71,10 +67,10 @@ export default function ActivityDetailsHeader({ activity }: Props) {
           <Typography variant="subtitle2">
             Hosted by{" "}
             <Link
-              to={`/profiles/username`}
+              to={`/profiles/${activity.hostId}`}
               style={{ color: "white", fontWeight: "bold" }}
             >
-              Bob
+              {activity.hostDisplayName}
             </Link>
           </Typography>
         </Box>
