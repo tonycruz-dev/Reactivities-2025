@@ -14,7 +14,7 @@ import { router } from './app/router/Routes.tsx';
 import { store, StoreContext } from './lib/stores/store.ts';
 import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFnsV3";
-import enGB from "date-fns/locale/en-GB";
+import { enGB } from "date-fns/locale/en-GB";
 
 const queryClient = new QueryClient();
 

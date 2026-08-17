@@ -2,6 +2,11 @@ type PagedList<T, TCursor> = {
   items: T[];
   nextCursor: TCursor;
 };
+type ResetPassword = {
+  email: string;
+  resetCode: string;
+  newPassword: string;
+};
 type Activity = {
   id: string;
   title: string;
